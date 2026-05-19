@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhu Nishad | BCA Student & Full-Stack Developer</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Madhu Nishad | BCA Student & Full-Stack Developer">
+  <meta name="description" content="Portfolio of Madhu Nishad, a BCA Student and Full-Stack Developer exploring Python, Web technologies, and React Native mobile applications.">
+  <meta name="keywords" content="Full-Stack Developer, Python Developer, BCA Student, React Native Developer, Expo, HTML, CSS, JavaScript, Portfolio">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Madhu Nishad | BCA Student & Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of Madhu Nishad, a BCA Student and Full-Stack Developer exploring Python, Web technologies, and React Native mobile applications.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Glowing Background Orbs -->
+  <div class="glow-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Custom Cursor Follower -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="gradient-text">MN</span>.dev
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Timeline</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span>
+            Available for Freelance & Full-time
+          </div>
+          <h1 class="hero-title fade-in">
+            Hi, I'm <span class="gradient-text">Madhu Nishad</span>
+          </h1>
+          <h2 class="hero-subtitle fade-in">
+            I build <span id="typed-text"></span><span class="typed-cursor">|</span>
+          </h2>
+          <p class="hero-description fade-in">
+            A career-oriented BCA Student & Full-Stack Developer focused on exploring Python, web technologies, and mobile applications to build sleek, robust solutions.
+          </p>
+          <div class="hero-actions fade-in">
+            <a href="#projects" class="btn btn-primary">
+              View Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch <i data-lucide="mail"></i>
+            </a>
+          </div>
+          <div class="hero-socials fade-in">
+            <a href="https://linkedin.com/in/madhulatanishad123" target="_blank" aria-label="LinkedIn" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/madhulatanishad123" target="_blank" aria-label="GitHub" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/2930__kashyap__" target="_blank" aria-label="Instagram" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="http://www.youtube.com/@tech__solution__AI" target="_blank" aria-label="YouTube" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual fade-in">
+          <div class="visual-wrapper">
+            <div class="visual-border-gradient"></div>
+            <!-- Glassmorphic Card detailing profile stats -->
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="avatar-ring">
+                  <img src="assets/avatar.png" alt="Madhu Nishad" class="avatar-img" id="avatar-img">
+                </div>
+                <div class="profile-info">
+                  <h3>Madhu Nishad</h3>
+                  <p>BCA Student</p>
+                </div>
+              </div>
+              <div class="profile-body">
+                <div class="stat-row">
+                  <span class="stat-label">Core Tech</span>
+                  <span class="stat-val">Python / Web Tech</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Mobile Stack</span>
+                  <span class="stat-val">React Native / Expo</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Status</span>
+                  <span class="stat-val active-status">
+                    <span class="status-indicator"></span> Active Coding
+                  </span>
+                </div>
+              </div>
+              <div class="profile-footer">
+                <div class="console-line">
+                  <span class="console-prompt">&gt;</span> <span class="console-cmd">npm run dev</span>
+                </div>
+                <div class="console-res">Server running at port 3000...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="scroll-indicator">
+        <span class="mouse-wheel"></span>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">About Me</span>
+          <h2 class="section-title">Exploring Python & Web Technologies</h2>
+          <div class="section-underline"></div>
+        </div>
+        
+        <div class="about-grid fade-trigger">
+          <div class="about-text-column">
+            <h3 class="about-heading">My Mission</h3>
+            <p class="about-para">
+              I am a career-oriented BCA student and full-stack software developer based in India, actively exploring Python, web technologies, and React Native mobile applications. I design responsive web platforms and cross-platform mobile utilities that combine creative aesthetics with robust execution logic.
+            </p>
+            <p class="about-para">
+              My engineering approach centers around building interactive UI interfaces, secure mobile emergency triggers, and intuitive chatbots. Focused on learning and expanding my technical capabilities, I aim to craft projects that solve real-world problems.
+            </p>
+            
+            <div class="about-tabs">
+              <div class="tab-headers">
+                <button class="tab-btn active" data-tab="credentials">Core Philosophy</button>
+                <button class="tab-btn" data-tab="education">Education</button>
+                <button class="tab-btn" data-tab="interests">Interests</button>
+              </div>
+              <div class="tab-contents">
+                <div class="tab-panel active" id="credentials">
+                  <ul class="phil-list">
+                    <li><strong>Performance First:</strong> Optimizing layout responsiveness, state synchronization, and assets rendering for fluent user interactions.</li>
+                    <li><strong>Sensory Design:</strong> Crafting glassmorphic surfaces, dynamic color systems, and rich transitions.</li>
+                    <li><strong>Python Exploration:</strong> Writing custom analytical scripts, interactive command utilities, and automated database integrations.</li>
+                  </ul>
+                </div>
+                <div class="tab-panel" id="education">
+                  <div class="edu-item">
+                    <h4>Bachelor of Computer Applications (BCA)</h4>
+                    <p class="edu-meta">Focused on software engineering, web technologies, and database systems</p>
+                  </div>
+                  <div class="edu-item">
+                    <h4>Full-Stack & Mobile Projects</h4>
+                    <p class="edu-meta">React Native mobile app builds, responsive Web architectures, and data analysis pipelines</p>
+                  </div>
+                </div>
+                <div class="tab-panel" id="interests">
+                  <div class="interests-grid">
+                    <span class="interest-tag"><i data-lucide="cpu"></i> AI Systems</span>
+                    <span class="interest-tag"><i data-lucide="gamepad-2"></i> Interactive Media</span>
+                    <span class="interest-tag"><i data-lucide="palette"></i> Modern UI/UX</span>
+                    <span class="interest-tag"><i data-lucide="workflow"></i> Microservices</span>
+                    <span class="interest-tag"><i data-lucide="dribbble"></i> Generative Art</span>
+                    <span class="interest-tag"><i data-lucide="activity"></i> Sports Science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-cards-column">
+            <div class="metric-card glass-card">
+              <span class="metric-num">BCA</span>
+              <span class="metric-label">Student 🎓</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-num">8+</span>
+              <span class="metric-label">GitHub Repos</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-num">Skills</span>
+              <span class="metric-label">Focused 🚀</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-num">Friendly</span>
+              <span class="metric-label">Creative 👨‍💻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">My Stack</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="skills-grid fade-trigger">
+          <!-- Skill Category 1 -->
+          <div class="skills-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper brand-blue">
+                <i data-lucide="smartphone"></i>
+              </div>
+              <h3>Mobile & Frontend</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info"><span>React Native & Expo</span><span>95%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>TypeScript / JavaScript</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>Next.js & React</span><span>88%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>Tailwind CSS & Vanilla CSS</span><span>92%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skills-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper brand-purple">
+                <i data-lucide="database"></i>
+              </div>
+              <h3>Backend & Databases</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info"><span>Node.js / Express</span><span>92%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>MongoDB / Mongoose</span><span>88%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>RESTful APIs & WebSockets</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>PostgreSQL & SQL</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skills-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon-wrapper brand-cyan">
+                <i data-lucide="bot"></i>
+              </div>
+              <h3>AI & Advanced Tools</h3>
+            </div>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-info"><span>LLM APIs & Prompt Engineering</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>OCR Integrations (Tesseract)</span><span>85%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>Git, Docker & Cloud Architecture</span><span>83%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 83%"></div></div>
+              </li>
+              <li>
+                <div class="skill-info"><span>Voice Dictation & Speech API</span><span>87%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 87%"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github-stats" class="github-stats-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">Open Source</span>
+          <h2 class="section-title">GitHub Activity</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="github-stats-wrapper fade-trigger">
+
+          <!-- Top Row: Profile Stats + Recent Repos -->
+          <div class="github-top-row">
+
+            <!-- Stats Card -->
+            <div class="github-card glass-card" id="gh-stats-card">
+              <div class="github-card-header">
+                <i data-lucide="bar-chart-2"></i>
+                <span>GitHub Stats</span>
+              </div>
+              <div class="gh-profile-row" id="gh-profile-row">
+                <div class="gh-avatar-wrap">
+                  <img src="" alt="GitHub Avatar" class="gh-avatar" id="gh-avatar">
+                </div>
+                <div class="gh-profile-info">
+                  <h3 class="gh-username" id="gh-name">Loading...</h3>
+                  <p class="gh-bio" id="gh-bio"></p>
+                </div>
+              </div>
+              <div class="gh-counters" id="gh-counters">
+                <div class="gh-counter-item">
+                  <span class="gh-counter-num" id="gh-repos">—</span>
+                  <span class="gh-counter-label">Repos</span>
+                </div>
+                <div class="gh-counter-item">
+                  <span class="gh-counter-num" id="gh-stars">—</span>
+                  <span class="gh-counter-label">Stars</span>
+                </div>
+                <div class="gh-counter-item">
+                  <span class="gh-counter-num" id="gh-followers">—</span>
+                  <span class="gh-counter-label">Followers</span>
+                </div>
+                <div class="gh-counter-item">
+                  <span class="gh-counter-num" id="gh-forks">—</span>
+                  <span class="gh-counter-label">Forks</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Repos Card -->
+            <div class="github-card glass-card">
+              <div class="github-card-header">
+                <i data-lucide="git-branch"></i>
+                <span>Recent Repositories</span>
+              </div>
+              <div class="gh-repos-list" id="gh-repos-list">
+                <div class="gh-skeleton"></div>
+                <div class="gh-skeleton"></div>
+                <div class="gh-skeleton"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Row: Top Languages -->
+          <div class="github-card glass-card">
+            <div class="github-card-header">
+              <i data-lucide="code-2"></i>
+              <span>Most Used Languages</span>
+            </div>
+            <div class="gh-langs-grid" id="gh-langs-grid">
+              <div class="gh-skeleton"></div>
+              <div class="gh-skeleton"></div>
+              <div class="gh-skeleton"></div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="github-cta">
+            <a href="https://github.com/madhulatanishad123" target="_blank" class="btn btn-primary" id="github-profile-btn">
+              <i data-lucide="github"></i>
+              View Full GitHub Profile
+            </a>
+            <div class="github-meta">
+              <span class="github-meta-item"><i data-lucide="git-branch"></i> 8+ Public Repos</span>
+              <span class="github-meta-item"><i data-lucide="star"></i> Active in 2026</span>
+              <span class="github-meta-item"><i data-lucide="users"></i> Open to Collaborate</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="timeline-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">My Journey</span>
+          <h2 class="section-title">Student Timeline</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="timeline-container fade-trigger">
+          <div class="timeline-line"></div>
+          
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">2026 - Present</span>
+              <h3 class="timeline-role">Full-Stack &amp; Mobile App Developer</h3>
+              <h4 class="timeline-company">Self-Learning &amp; Open Source Projects</h4>
+              <p class="timeline-desc">
+                Actively building real-world mobile applications using React Native and Expo. Developed a Doctor Appointment App with Supabase, an SOS Emergency Alert system with live GPS tracking, and a Revenue &amp; Expense Tracker — all published on GitHub as open-source projects.
+              </p>
+              <div class="timeline-tags">
+                <span>React Native</span><span>Expo SDK</span><span>Supabase</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">2025 - 2026</span>
+              <h3 class="timeline-role">Web Developer &amp; Python Learner</h3>
+              <h4 class="timeline-company">Personal Projects &amp; BCA Coursework</h4>
+              <p class="timeline-desc">
+                Mastered front-end fundamentals with HTML5, CSS3, and Vanilla JavaScript. Built an NGO charity website, a college enquiry chatbot in Python/Flask, and a data analytics pipeline — applying BCA programming coursework directly to hands-on live projects.
+              </p>
+              <div class="timeline-tags">
+                <span>HTML5 / CSS3</span><span>Python</span><span>Flask</span><span>Vanilla JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">2024 - 2025</span>
+              <h3 class="timeline-role">BCA Student — Computer Applications</h3>
+              <h4 class="timeline-company">Bachelor of Computer Applications (BCA)</h4>
+              <p class="timeline-desc">
+                Enrolled in a Bachelor of Computer Applications degree with a strong focus on software engineering, database management, and web technologies. Started exploring programming fundamentals, data structures, and computer networks through hands-on academic labs and assignments.
+              </p>
+              <div class="timeline-tags">
+                <span>C / C++</span><span>DBMS</span><span>Data Structures</span><span>Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">My Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <!-- Project Filtering Category Tabs -->
+        <div class="portfolio-filters fade-trigger" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Systems</button>
+          <button class="filter-btn" data-filter="ai">AI & ML Chatbots</button>
+          <button class="filter-btn" data-filter="web">Web & Analytics</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid fade-trigger" id="projects-grid">
+          
+          <!-- Project 1 (Mobile Systems / Expence-Tracker-React-Native) -->
+          <div class="project-card glass-card" data-category="mobile" data-project-id="expence-tracker">
+            <div class="project-img-wrapper">
+              <img src="assets/project1.png" alt="Expense Tracker Dashboard" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/Expence-Tracker-React-Native" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/Expence-Tracker-React-Native" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">Mobile Systems</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Expence-Tracker-React-Native</h3>
+              <p class="project-description">
+                An offline-first, highly intuitive mobile expense tracker built in React Native and TypeScript, managing dynamic transaction history ledgers with cached state registries.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span><span>TypeScript</span><span>Expo SDK</span><span>AsyncStorage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (Mobile Safety / SOS-Emergency-React-Native) -->
+          <div class="project-card glass-card" data-category="mobile" data-project-id="sos-emergency">
+            <div class="project-img-wrapper">
+              <img src="assets/project2.png" alt="SOS Emergency Video Evidence" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/SOS-Emergency-React-Native" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/SOS-Emergency-React-Native" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">Mobile Safety</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">SOS-Emergency-React-Native</h3>
+              <p class="project-description">
+                A rapid-response emergency distress signaling application engineered to capture background device diagnostics and immediately dispatch live GPS triggers to priority numbers.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span><span>JavaScript</span><span>Geolocation API</span><span>SMS Gateway</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (AI Chatbots / college-enquiry-chatbot) -->
+          <div class="project-card glass-card" data-category="ai" data-project-id="college-chatbot">
+            <div class="project-img-wrapper">
+              <img src="assets/project3.png" alt="College Chatbot Interface" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/college-enquiry-chatbot" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/college-enquiry-chatbot" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">AI Chatbot</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">college-enquiry-chatbot</h3>
+              <p class="project-description">
+                An intelligent query-resolving college assistant chatbot that dynamically processes administrative curricula admissions queries and student checkins.
+              </p>
+              <div class="project-tech">
+                <span>Python</span><span>Web Technologies</span><span>CSS Grid</span><span>Conversational API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (Web Architectures / NGO-Website) -->
+          <div class="project-card glass-card" data-category="web" data-project-id="ngo-website">
+            <div class="project-img-wrapper">
+              <img src="assets/project4.png" alt="NGO Interactive Portal" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/NGO-Website" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/NGO-Website" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">Web Architecture</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">NGO-Website</h3>
+              <p class="project-description">
+                A fully responsive charitable portal built on modern markup patterns, supporting dynamic outreach campaigns, program dashboards, and donation portals.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>Glassmorphism</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 (Web & Analytics / data-analytics) -->
+          <div class="project-card glass-card" data-category="web" data-project-id="data-analytics">
+            <div class="project-img-wrapper">
+              <img src="assets/project5.png" alt="Data Science Graphs" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/data-analytics" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/data-analytics" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">Data Science</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">data-analytics</h3>
+              <p class="project-description">
+                A modular data processing package written in Python designed to ingest, clean, and visualize multi-variable telemetry data matrices.
+              </p>
+              <div class="project-tech">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Telemetry Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 (Mobile Systems / Doctor-App-React-Native) -->
+          <div class="project-card glass-card" data-category="mobile" data-project-id="doctor-app">
+            <div class="project-img-wrapper">
+              <img src="assets/project6.png" alt="Doctor App Dashboard" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/madhulatanishad123/Doctor-App-React-Native" target="_blank" aria-label="GitHub Repository" class="project-link-icon stop-propagation">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <a href="https://github.com/madhulatanishad123/Doctor-App-React-Native" target="_blank" aria-label="Live Demo" class="project-link-icon stop-propagation">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-badge">Mobile Systems</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Doctor-App-React-Native</h3>
+              <p class="project-description">
+                A premium, full-stack telemedicine mobile platform engineered on React Native and Expo, featuring Supabase authentication, automated push-based reminders, and health goal trackers.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span><span>Expo SDK</span><span>Supabase</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">My Learning</span>
+          <h2 class="section-title">Certificates &amp; Badges</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="certs-grid fade-trigger">
+
+          <!-- Certificate 1 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform udemy">
+              <i data-lucide="award"></i>
+              <span>Udemy</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">React Native &amp; Expo — Complete Developer Guide</h3>
+              <p class="cert-issuer">Udemy · 2026</p>
+              <p class="cert-desc">Built production-grade mobile apps with React Native, Expo SDK, navigation, and REST API integration.</p>
+              <div class="cert-tags">
+                <span>React Native</span><span>Expo</span><span>JavaScript</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform coursera">
+              <i data-lucide="award"></i>
+              <span>Coursera</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Python for Everybody Specialization</h3>
+              <p class="cert-issuer">Coursera · University of Michigan · 2025</p>
+              <p class="cert-desc">Mastered Python programming fundamentals, data structures, web scraping, databases, and data visualization.</p>
+              <div class="cert-tags">
+                <span>Python</span><span>Data Structures</span><span>SQL</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform udemy">
+              <i data-lucide="award"></i>
+              <span>Udemy</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">The Complete Web Developer Bootcamp</h3>
+              <p class="cert-issuer">Udemy · 2025</p>
+              <p class="cert-desc">Full-stack web development covering HTML5, CSS3, JavaScript, Node.js, Express, and MongoDB from scratch.</p>
+              <div class="cert-tags">
+                <span>HTML5</span><span>CSS3</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform freecodecamp">
+              <i data-lucide="award"></i>
+              <span>freeCodeCamp</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Responsive Web Design Certification</h3>
+              <p class="cert-issuer">freeCodeCamp · 2025</p>
+              <p class="cert-desc">Completed 300+ hours of responsive web design covering HTML, CSS, Flexbox, CSS Grid, and accessibility.</p>
+              <div class="cert-tags">
+                <span>HTML</span><span>CSS</span><span>Flexbox</span><span>Grid</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 5 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform google">
+              <i data-lucide="award"></i>
+              <span>Google</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Google IT Support Professional Certificate</h3>
+              <p class="cert-issuer">Google · Coursera · 2025</p>
+              <p class="cert-desc">Covered networking fundamentals, system administration, IT security, and troubleshooting across 5 courses.</p>
+              <div class="cert-tags">
+                <span>Networking</span><span>IT Support</span><span>Linux</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 6 -->
+          <div class="cert-card glass-card">
+            <div class="cert-platform udemy">
+              <i data-lucide="award"></i>
+              <span>Udemy</span>
+            </div>
+            <div class="cert-body">
+              <h3 class="cert-title">Node.js, Express &amp; MongoDB — Backend Masterclass</h3>
+              <p class="cert-issuer">Udemy · 2026</p>
+              <p class="cert-desc">Built scalable REST APIs with Node.js, Express, JWT authentication, MongoDB, and deployed to cloud platforms.</p>
+              <div class="cert-tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+              </div>
+            </div>
+            <a href="#" class="cert-btn btn btn-secondary" target="_blank">
+              View Certificate <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header text-center fade-trigger">
+          <span class="section-tagline">Get In Touch</span>
+          <h2 class="section-title">Let's Create Together</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="contact-wrapper fade-trigger">
+          <div class="contact-info-column">
+            <h3 class="contact-subtitle">Collaboration Hub</h3>
+            <p class="contact-text">
+              Have an ambitious product idea, complex backend problem, or a mobile design vision that needs high-fidelity execution? Drop a message, and let's engineer something outstanding together.
+            </p>
+            
+            <div class="contact-details">
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div class="detail-text">
+                  <span>Send an Email</span>
+                  <a href="mailto:madhulatanishad123@gmail.com">madhulatanishad123@gmail.com</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="message-circle"></i></div>
+                <div class="detail-text">
+                  <span>Chat on WhatsApp</span>
+                  <a href="https://wa.me/919380789427" target="_blank">+91 93807 89427</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                  </svg>
+                </div>
+                <div class="detail-text">
+                  <span>YouTube Channel</span>
+                  <a href="http://www.youtube.com/@tech__solution__AI" target="_blank">@tech__solution__AI</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div class="detail-text">
+                  <span>Current Base</span>
+                  <p>India</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="briefcase"></i></div>
+                <div class="detail-text">
+                  <span>Professional Capacity</span>
+                  <p>Freelance & Full-time Engineering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-column">
+            <!-- Glassmorphic Form Card -->
+            <form class="contact-form glass-card" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="contact-name" name="name" placeholder=" " required autocomplete="name">
+                  <label for="contact-name">Full Name</label>
+                  <span class="input-focus-line"></span>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="contact-email" name="email" placeholder=" " required autocomplete="email">
+                  <label for="contact-email">Email Address</label>
+                  <span class="input-focus-line"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="contact-subject" name="subject" placeholder=" " required>
+                <label for="contact-subject">Subject Title</label>
+                <span class="input-focus-line"></span>
+              </div>
+              <div class="form-group">
+                <textarea id="contact-message" name="message" rows="5" placeholder=" " required></textarea>
+                <label for="contact-message">Detailed Message</label>
+                <span class="input-focus-line"></span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span>Send Message</span>
+                <i data-lucide="send" class="btn-submit-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 <span class="gradient-text">Madhu Nishad</span> All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#experience" class="footer-link">Timeline</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#certificates" class="footer-link">Certificates</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to Top">
+    <i data-lucide="chevrons-up"></i>
+  </button>
+
+  <!-- Premium Glassmorphic Project Modal -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-badge-row">
+            <span class="modal-badge" id="modal-project-badge">Category</span>
+            <span class="modal-year" id="modal-project-year">Year</span>
+          </div>
+          <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+        </div>
+        <div class="modal-body-grid">
+          <div class="modal-media">
+            <img src="assets/project1.png" alt="Project In Focus" id="modal-project-img" class="modal-img">
+          </div>
+          <div class="modal-details">
+            <h3 class="modal-subtitle">Project Overview</h3>
+            <p class="modal-desc" id="modal-project-desc">Description of the project goes here...</p>
+            
+            <h3 class="modal-subtitle">Key Features & Architecture</h3>
+            <ul class="modal-list" id="modal-project-features">
+              <li>Feature point description.</li>
+            </ul>
+
+            <div class="modal-tech-stack">
+              <h3 class="modal-subtitle">Engineered With</h3>
+              <div class="modal-tech-tags" id="modal-project-tech">
+                <span>Tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" target="_blank" class="btn btn-primary" id="modal-link-live">
+            Visit Live Demo <i data-lucide="external-link"></i>
+          </a>
+          <a href="#" target="_blank" class="btn btn-secondary" id="modal-link-code">
+            View Source Code <i data-lucide="github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- JS Script Link -->
+  <script src="script.js?v=20260518_v2"></script>
+</body>
+</html>
